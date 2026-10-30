@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(105deg, #f7aa77 0%, #ff6b6b 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.app-container {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.front-page {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.main-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 35px;
+  line-height: 1.5;
+}
+
+.start-btn {
+  padding: 16px 48px;
+  background: linear-gradient(90deg, #ff9a56, #ff6b6b);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.start-btn:hover {
+  transform: scale(1.05);
+}
+
+.app-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+.progress-section {
+  margin-bottom: 25px;
+}
+
+.progress-bar-bg {
+  height: 12px;
+  background: #f0f0f0;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff9a56, #ff6b6b);
+  border-radius: 6px;
+  transition: width 0.4s ease;
+}
+
+.progress-text {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+.question-box {
+  margin-top: 20px;
+}
+
+.question-text {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.option-btn {
+  padding: 15px 20px;
+  border: 2px solid #e0e0e0;
+  background: #fff;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.option-btn:hover:not(:disabled) {
+  border-color: #ff9a56;
+  background: #fff9f5;
+}
+
+.option-btn.selected {
+  border-color: #ff9a56;
+  background: #fff5eb;
+}
+
+.option-btn.correct {
+  border-color: #22c55e;
+  background: #f0fdf4;
+  color: #166534;
+}
+
+.option-btn.wrong {
+  border-color: #ef4444;
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.option-btn:disabled {
+  cursor: default;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: center;
+}
+
+.action-btn, .next-btn, .restart-btn {
+  padding: 14px 36px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.action-btn {
+  background: linear-gradient(90deg, #ff9a56, #ff6b6b);
+  color: white;
+}
+
+.action-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.next-btn {
+  background: linear-gradient(90deg, #ff9a56, #ff6b6b);
+  color: white;
+}
+
+.action-btn:hover:not(:disabled), .next-btn:hover, .restart-btn:hover {
+  transform: scale(1.03);
+}
+
+.result-screen {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.result-screen h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.score-label {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.score-value {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff9a56, #ff6b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.percent-text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.restart-btn {
+  background: linear-gradient(90deg, #ff9a56, #ff6b6b);
+  color: white;
+}
